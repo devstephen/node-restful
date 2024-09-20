@@ -1,0 +1,41 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/products
+
+
+###
+POST http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/id
+
+###
+PATCH  http://localhost:3000/products/id
+
+###
+DELETE  http://localhost:3000/products/id
+
+###
+POST http://localhost:3000/test?title=Dell&price=99
+
+
+###
+POST http://localhost:3000/test/636393
+
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "title": "iPhone 16 Pro Max",
+    "price": 1199
+}
+
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+title=iPhone 16 Pro Max&price=1199
